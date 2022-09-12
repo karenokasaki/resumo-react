@@ -5,7 +5,6 @@ import { Routes, Route } from "react-router-dom";
 import { useState } from "react";
 import DetailPage from "./pages/DetailsPage";
 function App() {
-
   const [array, setArray] = useState([
     { id: 3221649847, name: "karen" },
     { id: 987971987, name: "fabio" },
@@ -22,8 +21,10 @@ function App() {
           element={<HomePage array={array} nome={nome} setNome={setNome} />}
         />
 
-        <Route path="/names/:idName" element={<DetailPage array={array}/>} />
+        <Route path="/names/:idName" element={<DetailPage array={array} />} />
       </Routes>
+
+      <h2> Oi da Karen</h2>
     </div>
   );
 }
