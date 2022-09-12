@@ -16,6 +16,7 @@ function App() {
     <div className="App">
       <NavBar />
 
+      <h1>oi do jino</h1>
       <Routes>
         <Route
           path="/"
